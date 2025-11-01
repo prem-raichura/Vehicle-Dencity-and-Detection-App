@@ -1,4 +1,4 @@
-# 🚦 Vehicle Dencity & Detection-App — Backend (FastAPI + YOLOv5su)
+# 🚦 Vehicle Density & Detection-App — Backend (FastAPI + YOLOv5su)
 
 The **backend** for TrafficEye — a powerful **FastAPI** service that performs vehicle detection and traffic density estimation using the **YOLOv5su model** trained on the **IITMHeTRA dataset**.  
 It processes both images and videos and returns results with bounding boxes, confidence scores, vehicle counts, and density levels.
