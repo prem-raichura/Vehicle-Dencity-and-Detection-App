@@ -11,7 +11,7 @@ BACKEND_URL = "https://vehicle-detection-backend.onrender.com"
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://vehicle-dencity-and-detection-app.vercel.app",
+        "https://vehicle-density-and-detection-app.vercel.app",
         "http://localhost:5173"
     ],
     allow_methods=["*"],
