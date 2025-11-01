@@ -33,16 +33,6 @@ It allows users to upload images or videos, processes them through a YOLOv5su-po
 
 ### 🧩 Prerequisites
 - Node.js (version 16 or higher)
-- npm (Node Package Manager)
+- npm (Node Package Manager)`
 - Running FastAPI backend at `http://127.0.0.1:8000` or your Render deployment URL
 
----
-
-### 🧰 Installation
-
-```bash
-# Navigate to the frontend folder
-cd frontend
-
-# Install dependencies
-npm install
