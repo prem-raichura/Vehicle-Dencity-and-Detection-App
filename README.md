@@ -24,12 +24,11 @@ An AI-powered web application that uses a **YOLOv5su** model trained on the **II
 * [Features](#-features)
 * [Tech Stack](#-tech-stack)
 * [Model Details](#-model-details)
-* [Installation & Setup](#-installation--setup)
+* [Installation & Setup](#installation-setup)
     * [Prerequisites](#prerequisites)
-    * [Backend Setup](#backend-setup)
-    * [Frontend Setup](#frontend-setup)
+    * [Backend Setup](#2-backend-setup)
+    * [Frontend Setup](#3-frontend-setup)
 * [Developed By](#-developed-by)
-* [Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -143,6 +142,6 @@ Open `http://localhost:3000` in your browser to use the application.
 
 ## 🧑‍💻 Developed By
 
-**Prem Raichura**
+[**Prem Raichura**](https://portfolio-prem-raichura.vercel.app/)
 * **GitHub:** [prem-raichura](https://github.com/prem-raichura)
 * **LinkedIn:** [prem-raichura](https://www.linkedin.com/in/prem-raichura/)
