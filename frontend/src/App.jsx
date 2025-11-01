@@ -34,7 +34,7 @@ export default function App() {
               initial={{ y: -40, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              TrafficEye : Vehicle Dencity & Detection
+              Vehicle Dencity & Detection
             </motion.h1>
             <p className="text-lg text-gray-700 mb-10 z-10">
               AI-powered YOLO-based traffic analysis
