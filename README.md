@@ -29,7 +29,6 @@ An AI-powered web application that uses a **YOLOv5su** model trained on the **II
     * [Backend Setup](#backend-setup)
     * [Frontend Setup](#frontend-setup)
 * [Developed By](#-developed-by)
-* [Acknowledgements](#-acknowledgements)
 
 ---
 
