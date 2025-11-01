@@ -50,7 +50,7 @@ This tool is ideal for traffic monitoring, urban planning analysis, or as a powe
 
 * **Image & Video Processing:** Upload `.jpg`, `.png`, or `.mp4` files for analysis.
 * **Multi-Class Vehicle Detection:** Identifies multiple classes of vehicles (e.g., car, bus, truck, motorcycle).
-* **Bounding Box Visualization:**Clearly displays detected vehicles with labeled bounding boxes.
+* **Bounding Box Visualization:** Clearly displays detected vehicles with labeled bounding boxes.
 * **Vehicle Density Count:** Provides a total count of detected vehicles in the frame or video.
 * **Responsive Web Interface:** A clean and easy-to-use interface accessible from any device.
 
