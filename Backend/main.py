@@ -2,14 +2,18 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from ultralytics import YOLO
-import cv2, numpy as np, os, time, uuid, shutil
+import cv2, numpy as np, os, time, shutil
 
 app = FastAPI()
 model = YOLO("yolov5su.pt")
+BACKEND_URL = "https://vehicle-detection-backend.onrender.com"
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://vehicle-dencity-and-detection-app.vercel.app/"],
+    allow_origins=[
+        "https://vehicle-dencity-and-detection-app.vercel.app",
+        "http://localhost:3000"
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -72,7 +76,7 @@ async def detect(file: UploadFile = File(...)):
 
         image_output = output_path.replace(".mp4", ".jpg")
         cv2.imwrite(image_output, frame)
-        processed_url = f"http://127.0.0.1:8000/file/{os.path.basename(image_output)}"
+        processed_url = f"{BACKEND_URL}/file/{os.path.basename(image_output)}"
 
     # ---------- VIDEO ----------
     elif file_ext in [".mp4", ".mov", ".avi"]:
@@ -109,7 +113,7 @@ async def detect(file: UploadFile = File(...)):
 
         cap.release()
         out.release()
-        processed_url = f"http://127.0.0.1:8000/file/{os.path.basename(output_path)}"
+        processed_url = f"{BACKEND_URL}/file/{os.path.basename(output_path)}"
 
     else:
         return {"error": "Unsupported file format"}
