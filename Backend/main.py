@@ -12,7 +12,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://vehicle-dencity-and-detection-app.vercel.app",
-        "http://localhost:3000"
+        "http://localhost:5173"
     ],
     allow_methods=["*"],
     allow_headers=["*"],
