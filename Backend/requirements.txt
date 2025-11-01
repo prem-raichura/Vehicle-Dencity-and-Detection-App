@@ -1,16 +1,6 @@
-<<<<<<< HEAD
 fastapi
 uvicorn
 ultralytics
 opencv-python
 numpy
 python-multipart
-=======
-fastapi
-uvicorn
-ultralytics
-opencv-python
-numpy
-python-multipart
->>>>>>> 78c0336 (Initial commit - FastAPI YOLO backend + React frontend)
-pandas
