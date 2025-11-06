@@ -4,6 +4,7 @@ import UploadZone from "./components/UploadZone";
 import MediaPreview from "./components/MediaPreview";
 import ResultPanel from "./components/ResultPanel";
 import Loader from "./components/Loader";
+import WelcomeScreen from "./components/WelcomeScreen";
 
 export default function App() {
   const [showDetection, setShowDetection] = useState(false);
@@ -15,40 +16,10 @@ export default function App() {
     <div className="w-screen h-screen overflow-hidden bg-gradient-to-br from-blue-200 via-white to-cyan-200 flex items-center justify-center">
       <AnimatePresence mode="wait">
         {!showDetection ? (
-          <motion.div
-            key="home"
-            className="flex flex-col items-center justify-center h-full w-full text-center relative"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            {/* Animated background circle */}
-            <motion.div
-              className="absolute w-[600px] h-[600px] bg-gradient-to-br from-blue-400 to-cyan-300 rounded-full blur-3xl opacity-30"
-              animate={{ scale: [1, 1.1, 1] }}
-              transition={{ duration: 8, repeat: Infinity }}
-            ></motion.div>
-
-            <motion.h1
-              className="text-6xl font-extrabold text-blue-800 z-10 mb-4"
-              initial={{ y: -40, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-            >
-              Vehicle Density & Detection
-            </motion.h1>
-            <p className="text-lg text-gray-700 mb-10 z-10">
-              AI-powered YOLO-based traffic analysis
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setShowDetection(true)}
-              className="z-10 px-10 py-3 bg-gradient-to-r from-blue-600 to-cyan-400 text-white text-lg rounded-2xl shadow-xl hover:shadow-2xl transition"
-            >
-              Start Detection 🚦
-            </motion.button>
-          </motion.div>
+          // ✅ Replaced old welcome UI with the new modular component
+          <WelcomeScreen setShowDetection={setShowDetection} />
         ) : (
+          // ✅ Detection Dashboard
           <motion.div
             key="detection"
             className="w-full h-full flex flex-col md:flex-row gap-6 px-8 py-8"
