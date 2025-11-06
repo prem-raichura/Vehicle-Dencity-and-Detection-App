@@ -36,7 +36,7 @@ const WelcomeScreen = ({ setShowDetection }) => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 120, damping: 15 }}
       >
-        Traffic Density & Detection System
+        Traffic Density & Detection App
       </motion.h1>
       
       <p className="text-lg text-gray-700 mb-10 z-10 max-w-xl">
